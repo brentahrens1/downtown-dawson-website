@@ -5,7 +5,7 @@
             <div class="hamburger__bar"></div>
             <div class="hamburger__bar"></div>
         </div>
-        <div class="side-drawer">
+        <div class="side-drawer" :class="{'show': isOpen}">
             <ul class="side-drawer-list">
                 <li class="side-drawer-list__item"><router-link to="/">Home</router-link></li>
                 <li class="side-drawer-list__item"><router-link to="/music">Music</router-link></li>
@@ -42,7 +42,7 @@ export default {
             left:0;
             background: #000;
             transition: all .50s ease-in-out;
-            
+
             &:nth-child(1) {
                 top: 0;
             }
@@ -56,7 +56,7 @@ export default {
                 transition: all 1s ease-in-out;
             }
             .open > &:first-child {
-                top: 57%;
+                top: 1rem;
                 transform: rotate(135deg);
                 transition: all .50s ease-in-out;
             }
@@ -66,9 +66,35 @@ export default {
                 transition: all .50s ease-in-out;
             }
             .open > &:nth-child(3) {
+                top: 1rem;
                 transform: rotate(-135deg);
                 transition: all .50s ease-in-out;
             }
+        }
+    }
+    .side-drawer {
+    height: 100%;
+    width: 25rem;
+    position: fixed;
+    background: orange;
+    top: 0;
+    right:-30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right .75s ease-in-out;
+    
+        .side-drawer-list {
+
+            &__item {
+                font-size: 3rem;
+                text-transform: uppercase;
+                padding: 20px 20px;
+            }
+        }
+        &.show {
+            right: 0;
         }
     }
 </style>

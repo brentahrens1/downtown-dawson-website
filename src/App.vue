@@ -31,4 +31,13 @@ export default {
     padding: 0;
     margin: 0;
   }
+
+  li {
+    list-style: none;
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+    color: #000;
+  }
 </style>
