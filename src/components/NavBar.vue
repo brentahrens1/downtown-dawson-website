@@ -1,5 +1,8 @@
 <template>
     <div class="nav">
+        <div class="nav-header">
+            <h1><router-link to="/">Downtown Dawson</router-link></h1>
+        </div>
         <div class="hamburger" :class="{'open': isOpen}" @click="isOpen = !isOpen">
             <div class="hamburger__bar"></div>
             <div class="hamburger__bar"></div>
@@ -7,8 +10,8 @@
         </div>
         <div class="side-drawer" :class="{'show': isOpen}">
             <ul class="side-drawer-list">
-                <li class="side-drawer-list__item"><router-link to="/">Home</router-link></li>
                 <li class="side-drawer-list__item"><router-link to="/music">Music</router-link></li>
+                <li class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
             </ul>
         </div>
     </div>
@@ -26,6 +29,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .nav {
+        width: 100%;
+        height: 5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-header {
+        position: fixed;
+        top: 0rem;
+        left: 1rem;
+        text-transform: uppercase;
+    }
+
     .hamburger {
         width: 4rem;
         height: 2.5rem;
@@ -57,7 +75,7 @@ export default {
             }
             .open > &:first-child {
                 top: 1rem;
-                transform: rotate(135deg);
+                transform: rotate(50deg);
                 transition: all .50s ease-in-out;
             }
             .open > &:nth-child(2) {
@@ -67,7 +85,7 @@ export default {
             }
             .open > &:nth-child(3) {
                 top: 1rem;
-                transform: rotate(-135deg);
+                transform: rotate(-410deg);
                 transition: all .50s ease-in-out;
             }
         }
@@ -88,13 +106,19 @@ export default {
         .side-drawer-list {
 
             &__item {
-                font-size: 3rem;
+                font-size: 2rem;
                 text-transform: uppercase;
-                padding: 20px 20px;
+                padding: 15px 20px;
             }
         }
         &.show {
             right: 0;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .side-drawer {
+            width: 100%;
         }
     }
 </style>
