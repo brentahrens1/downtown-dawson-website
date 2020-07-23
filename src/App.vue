@@ -19,6 +19,7 @@ export default {
 <style lang="scss">
   html {
     box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
   }
 
   *, 
@@ -30,6 +31,10 @@ export default {
   html, body {
     padding: 0;
     margin: 0;
+  }
+
+  ul {
+    padding: 0;
   }
 
   li {

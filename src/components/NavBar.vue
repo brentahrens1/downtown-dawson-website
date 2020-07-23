@@ -13,6 +13,10 @@
                 <li class="side-drawer-list__item"><router-link to="/music">Music</router-link></li>
                 <li class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
             </ul>
+            <div class="socials">
+                <h4><a href="https://www.instagram.com/downtown_dawson/" target="_blank">Instagram</a></h4>
+                <h4><a href="https://twitter.com/lastnamedawson" target="_blank">Twitter</a></h4>
+            </div>
         </div>
     </div>
 </template>
@@ -32,23 +36,27 @@ export default {
     .nav {
         width: 100%;
         height: 5rem;
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        z-index: 1000;
+        animation: fade .8s ease-in;
     }
 
     .nav-header {
-        position: fixed;
-        top: 0rem;
-        left: 1rem;
+        font-size: 1rem;
         text-transform: uppercase;
+        position: absolute;
+        left: 1rem;
     }
 
     .hamburger {
         width: 4rem;
-        height: 2.5rem;
-        position: fixed;
-        top: 1.5rem;
+        height: 2.1rem;
+        position: absolute;
         right: 1rem;
         z-index: 1000;
         cursor: pointer;
@@ -96,7 +104,7 @@ export default {
     position: fixed;
     background: orange;
     top: 0;
-    right:-30rem;
+    right:-40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,15 +118,45 @@ export default {
                 text-transform: uppercase;
                 padding: 15px 20px;
             }
+            &__item a:hover {
+                color: #fff;
+            }
         }
         &.show {
             right: 0;
+        }
+        .socials {
+            width: 50%;
+            display: flex;
+            position: absolute;
+            justify-content: space-around;
+            bottom: 1rem;
+            text-transform: uppercase;
+
+            a:hover {
+                color: #fff;
+            }
         }
     }
 
     @media (max-width: 650px) {
         .side-drawer {
             width: 100%;
+        }
+
+        .nav-header {
+            font-size: .7rem;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+            transform: translateY(-2rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 </style>
