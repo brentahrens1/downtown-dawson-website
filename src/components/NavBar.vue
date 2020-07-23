@@ -88,7 +88,6 @@ export default {
             }
             .open > &:nth-child(2) {
                 opacity: 0;
-                left: -60px;
                 transition: all .50s ease-in-out;
             }
             .open > &:nth-child(3) {
