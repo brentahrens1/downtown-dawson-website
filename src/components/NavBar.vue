@@ -1,7 +1,7 @@
 <template>
     <div class="nav">
         <div class="nav-header">
-            <router-link to="/"><img src="../assets/images/weed-leaf.png"></router-link>
+            <router-link to="/"><h2>Downtown Dawson</h2></router-link>
         </div>
         <div class="hamburger" :class="{'open': isOpen}" @click="isOpen = !isOpen">
             <div class="hamburger__bar"></div>
@@ -14,8 +14,12 @@
                 <li class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
             </ul>
             <div class="socials">
-                <h4><a href="https://www.instagram.com/downtown_dawson/" target="_blank">Instagram</a></h4>
-                <h4><a href="https://twitter.com/lastnamedawson" target="_blank">Twitter</a></h4>
+                <div class="socials-icon">
+                    <img src="../assets/images/instagram-512.png">
+                </div>
+                <div class="socials-icon">
+                    <img src="../assets/images/twitter-512.png">
+                </div>
             </div>
         </div>
     </div>
@@ -47,8 +51,6 @@ export default {
     }
 
     .nav-header {
-        width: 70px;
-        height: 70px;
         position: absolute;
         left: 1rem;
 
@@ -133,11 +135,16 @@ export default {
             display: flex;
             position: absolute;
             justify-content: space-around;
-            bottom: 1rem;
+            bottom: 2rem;
             text-transform: uppercase;
 
-            a:hover {
-                color: #fff;
+            .socials-icon {
+                width: 40px;
+                height: 40px;
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }

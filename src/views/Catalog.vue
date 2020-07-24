@@ -7,9 +7,9 @@
 <script>
 import CatalogSection from '../components/CatalogSection'
 export default {
-  name: 'CatalogSection',
+  name: 'Catalog',
   components: {
-    CatalogSection: CatalogSection
+    CatalogSection
   }
 }
 </script>

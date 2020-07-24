@@ -4,14 +4,19 @@
       <nav-bar />
     </div>
     <router-view/>
+    <div id="footer">
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 export default {
   components: {
-    NavBar: NavBar
+    NavBar,
+    Footer
   }
 }
 </script>
@@ -30,6 +35,17 @@ export default {
   html, body {
     padding: 0;
     margin: 0;
+  }
+
+
+  #app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer {
+    margin-top: auto;
   }
 
   p, li, a {

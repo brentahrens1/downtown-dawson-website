@@ -3,31 +3,45 @@
         <h1>Catalog</h1>
         <div class="music__grid">
             <div class="music__block">
-                <img src="../assets/images/covers/cyclops.jpg">
+                <div class="music__block-image">
+                    <img src="../assets/images/covers/cyclops.jpg">
+                </div>
                 <h3><a href="#">Cyclops EP</a></h3>
             </div>
             <div class="music__block">
-                <img src="../assets/images/covers/smolder.jpg">
+                <div class="music__block-image">                    
+                    <img src="../assets/images/covers/smolder.jpg">
+                </div>
                 <h3><a href="#">Smolder EP</a></h3>
             </div>
             <div class="music__block">
-                <img src="../assets/images/covers/clustered.jpg">
+                <div class="music__block-image">                   
+                    <img src="../assets/images/covers/clustered.jpg">
+                </div>
                 <h3><a href="#">Clustered Spires LP</a></h3>
             </div>
             <div class="music__block">
-                <img src="../assets/images/covers/orare.jpg">
+                <div class="music__block-image">  
+                    <img src="../assets/images/covers/orare.jpg">
+                </div>
                 <h3><a href="#">Orare LP</a></h3>
             </div>
             <div class="music__block">
-                <img src="../assets/images/covers/lexus.jpg">
+                <div class="music__block-image">  
+                    <img src="../assets/images/covers/lexus.jpg">
+                </div>
                 <h3><a href="#">Lexus Hybrid - Single</a></h3>
             </div>
             <div class="music__block">
-                <img src="../assets/images/covers/gro.jpg">
+                <div class="music__block-image">
+                    <img src="../assets/images/covers/gro.jpg">
+                </div>
                 <h3><a href="#">G.R.O - Single</a></h3>
             </div>
             <div class="music__block">
-                <img src="../assets/images/covers/float.jpg">
+                <div class="music__block-image">
+                    <img src="../assets/images/covers/float.jpg">
+                </div>
                 <h3><a href="#">Float - Single</a></h3>
             </div>
         </div>
@@ -47,6 +61,7 @@ export default {
         background-size: cover;
         padding: 1rem;
         margin-top: 6rem;
+        animation: fade 700ms ease-in-out;
 
         h1 {
             text-align: center;
@@ -70,10 +85,22 @@ export default {
         flex-direction: column;
         text-align: center;
         text-transform: uppercase;
+        overflow: hidden;
 
-        img {
+        .music__block-image {
+            height: 100%;
             width: 100%;
-            cursor: pointer;
+            overflow: hidden;
+
+            &:hover img {
+            transform: scale(1.1);
+            }
+
+            img {
+                width: 100%;
+                cursor: pointer;
+                transition: transform .5s ease-in-out;
+            }
         }
 
         h3 {
@@ -84,7 +111,7 @@ export default {
                 display: block;
                 padding: .3rem;
                 z-index: 999;
-                transition: all 200ms ease-in-out;
+                transition: all 700ms ease-in-out;
 
                 &:hover {
                     color: #fff;
@@ -117,6 +144,15 @@ export default {
     @media (max-width: 750px) {
         .music__grid {
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
         }
     }
 </style>

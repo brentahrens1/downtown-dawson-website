@@ -2,20 +2,20 @@
   <div class="home">
     <Homepage />
     <Video />
-    <Catalog class="home__music" />
+    <CatalogSection class="home__music" />
   </div>
 </template>
 
 <script>
 import Homepage from '../components/Homepage'
-import Catalog from '../components/Catalog'
+import CatalogSection from '../components/CatalogSection'
 import Video from '../components/Video'
 export default {
   name: 'Home',
   components: {
-    Homepage: Homepage,
-    Catalog: Catalog,
-    Video: Video,
+    Homepage,
+    CatalogSection,
+    Video,
   }
 }
 </script>

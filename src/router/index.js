@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Catalog from '../views/Catalog.vue' 
+import Catalog from '../views/Catalog.vue'
+import Contact from '../views/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -15,13 +16,11 @@ Vue.use(VueRouter)
     path: '/catalog',
     name: 'Catalog',
     component: Catalog
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
   },
   {
     path: '/contact',
-    name: 'Contact'
+    name: 'Contact',
+    component: Contact
   }
 ]
 
