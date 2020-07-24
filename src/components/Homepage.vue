@@ -2,7 +2,7 @@
   <div class="homepage">
     <div class="homepage__content">
         <div class="homepage__content-cover">
-            <img src="../assets/images/cyclops.jpg">
+            <img src="../assets/images/covers/cyclops.jpg">
         </div>
         <div class="homepage__content-info">
             <h1>Cyclops EP</h1>

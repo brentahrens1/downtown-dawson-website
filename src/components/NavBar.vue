@@ -1,7 +1,7 @@
 <template>
     <div class="nav">
         <div class="nav-header">
-            <h1><router-link to="/">Downtown Dawson</router-link></h1>
+            <router-link to="/"><img src="../assets/images/weed-leaf.png"></router-link>
         </div>
         <div class="hamburger" :class="{'open': isOpen}" @click="isOpen = !isOpen">
             <div class="hamburger__bar"></div>
@@ -47,10 +47,14 @@ export default {
     }
 
     .nav-header {
-        font-size: 1rem;
-        text-transform: uppercase;
+        width: 70px;
+        height: 70px;
         position: absolute;
         left: 1rem;
+
+        img {
+            width: 100%;
+        }
     }
 
     .hamburger {
