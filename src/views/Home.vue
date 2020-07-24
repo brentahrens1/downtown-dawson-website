@@ -9,13 +9,13 @@
 <script>
 import Homepage from '../components/Homepage'
 import Catalog from '../components/Catalog'
-import Video from '..//components/Video'
+import Video from '../components/Video'
 export default {
   name: 'Home',
   components: {
     Homepage: Homepage,
     Catalog: Catalog,
-    Video: Video
+    Video: Video,
   }
 }
 </script>

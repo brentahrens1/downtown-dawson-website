@@ -36,7 +36,7 @@
 
 <script>
 export default {
-    name: "Catalog"
+    name: "CatalogSection"
 }
 </script>
 
@@ -82,7 +82,7 @@ export default {
             a:link, a:visited {
                 position: relative;
                 display: block;
-                padding: 0;
+                padding: .3rem;
                 z-index: 999;
                 transition: all 200ms ease-in-out;
 
@@ -119,5 +119,4 @@ export default {
             grid-template-columns: repeat(2, 1fr);
         }
     }
-
 </style>
