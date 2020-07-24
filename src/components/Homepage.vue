@@ -9,9 +9,6 @@
             <button>Listen Now</button>
         </div>
     </div>
-    <div class="homepage__section">
-
-    </div>
   </div>
 </template>
 
