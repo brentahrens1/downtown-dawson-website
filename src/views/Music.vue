@@ -1,15 +1,15 @@
 <template>
   <div class="music">
-    <MusicSection />
+    <Catalog />
   </div>
 </template>
 
 <script>
-import MusicSection from '../components/MusicSection'
+import Catalog from '../components/Catalog'
 export default {
-  name: 'Music',
+  name: 'Catalog',
   components: {
-    MusicSection: MusicSection
+    Catalog: Catalog
   }
 }
 </script>
