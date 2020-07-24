@@ -40,6 +40,10 @@ export default {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(auto, auto);
+
+        img {
+            width: 100%;
+        }
     }
 
 </style>
