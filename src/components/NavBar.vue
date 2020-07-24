@@ -43,6 +43,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         z-index: 1000;
+        background: #fff;
         animation: fade .8s ease-in;
     }
 

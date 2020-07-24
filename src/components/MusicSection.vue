@@ -36,9 +36,10 @@ export default {
 <style lang="scss" scoped>
 
     .music {
-        margin-top: 6rem;
         background: orange;
+        background-size: cover;
         padding: 1rem;
+        margin-top: 6rem;
 
         h1 {
             text-align: center;
@@ -58,7 +59,6 @@ export default {
     }
 
     .music__block {
-       
 
         img {
             width: 100%;

@@ -1,0 +1,72 @@
+<template>
+    <div class="video">
+        <div class="hero-wrapper">
+        <div class="hero">
+            <video loop="loop" muted="muted" autoplay="autoplay">
+                <source src="../assets/video/DawsonPromoNew.mp4"/>
+            </video>
+            <div class="booking-info">
+                <h1>Booking</h1>
+                <a href="#"><h2>briandawson@gmail.com</h2></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style lang="scss" scoped>
+
+    .hero-wrapper {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .hero {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -999;
+
+        .booking-info {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            
+            h1 {
+                font-size: 7rem;
+                margin: 0;
+            }
+
+            a:link, a:visited {
+                font-size: 2rem;
+                margin: 0;
+                color: #fff;
+            }
+        }
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+</style>

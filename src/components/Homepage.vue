@@ -21,15 +21,17 @@ export default {
 <style lang="scss" scoped>
     .homepage {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        background: #fff;
     }
 
     .homepage__content {
         margin-top: 8rem;
+        margin-bottom: 2rem;
         animation: fade .8s ease-in;
     }
 
