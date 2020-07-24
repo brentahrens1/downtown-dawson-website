@@ -1,18 +1,27 @@
 <template>
   <div class="home">
     <Homepage />
-    <MusicSection />
+    <Video />
+    <Catalog class="home__music" />
   </div>
 </template>
 
 <script>
 import Homepage from '../components/Homepage'
-import MusicSection from '../components/MusicSection'
+import Catalog from '../components/Catalog'
+import Video from '..//components/Video'
 export default {
   name: 'Home',
   components: {
     Homepage: Homepage,
-    MusicSection: MusicSection
+    Catalog: Catalog,
+    Video: Video
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .home__music {
+    margin-top: 0;
+  }
+</style>

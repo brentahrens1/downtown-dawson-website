@@ -10,7 +10,7 @@
         </div>
         <div class="side-drawer" :class="{'show': isOpen}">
             <ul class="side-drawer-list">
-                <li class="side-drawer-list__item"><router-link to="/music">Music</router-link></li>
+                <li class="side-drawer-list__item"><router-link to="/catalog">Catalog</router-link></li>
                 <li class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
             </ul>
             <div class="socials">

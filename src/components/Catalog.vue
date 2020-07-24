@@ -4,24 +4,31 @@
         <div class="music__grid">
             <div class="music__block">
                 <img src="../assets/images/covers/cyclops.jpg">
+                <h3><a href="#">Cyclops EP</a></h3>
             </div>
             <div class="music__block">
                 <img src="../assets/images/covers/smolder.jpg">
+                <h3><a href="#">Smolder EP</a></h3>
             </div>
             <div class="music__block">
                 <img src="../assets/images/covers/clustered.jpg">
+                <h3><a href="#">Clustered Spires LP</a></h3>
             </div>
             <div class="music__block">
                 <img src="../assets/images/covers/orare.jpg">
+                <h3><a href="#">Orare LP</a></h3>
             </div>
             <div class="music__block">
                 <img src="../assets/images/covers/lexus.jpg">
+                <h3><a href="#">Lexus Hybrid - Single</a></h3>
             </div>
             <div class="music__block">
                 <img src="../assets/images/covers/gro.jpg">
+                <h3><a href="#">G.R.O - Single</a></h3>
             </div>
             <div class="music__block">
                 <img src="../assets/images/covers/float.jpg">
+                <h3><a href="#">Float - Single</a></h3>
             </div>
         </div>
     </div>
@@ -29,16 +36,17 @@
 
 <script>
 export default {
-    
+    name: "Catalog"
 }
 </script>
 
 <style lang="scss" scoped>
 
     .music {
-        margin-top: 6rem;
         background: orange;
+        background-size: cover;
         padding: 1rem;
+        margin-top: 6rem;
 
         h1 {
             text-align: center;
@@ -58,11 +66,45 @@ export default {
     }
 
     .music__block {
-       
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
 
         img {
             width: 100%;
             cursor: pointer;
+        }
+
+        h3 {
+            position: relative;
+            
+            a:link, a:visited {
+                position: relative;
+                display: block;
+                padding: 0;
+                z-index: 999;
+                transition: all 200ms ease-in-out;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            &::after {
+                content: "";
+                width: 0;
+                height: 100%;
+                background: #000;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 200ms ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
         }
     }
     
