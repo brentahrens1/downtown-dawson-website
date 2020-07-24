@@ -32,6 +32,18 @@ export default {
     margin: 0;
   }
 
+  p, li, a {
+    font-family: 'Prompt', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Bungee', cursive;
+  }
+
+  ul {
+    padding: 0;
+  }
+
   li {
     list-style: none;
   }
