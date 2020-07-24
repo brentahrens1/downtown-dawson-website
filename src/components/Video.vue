@@ -69,4 +69,34 @@ export default {
         height: 100vh;
         object-fit: cover;
     }
+
+    @media (max-width: 800px) {
+
+        .hero {
+        .booking-info {
+            h1 {
+                font-size: 6.8rem;
+            }
+
+            a:link, a:visited {
+                font-size: 1.5rem;
+            }
+        }
+        }
+    }
+
+        @media (max-width: 600px) {
+
+        .hero {
+        .booking-info {
+            h1 {
+                font-size: 3.8rem;
+            }
+
+            a:link, a:visited {
+                font-size: .9rem;
+            }
+        }
+        }
+    }
 </style>
