@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 
     .music {
-        background: orange;
+        background: #fff;
         background-size: cover;
         padding: 1rem;
         margin-top: 6rem;

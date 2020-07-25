@@ -89,6 +89,13 @@ export default {
         }
     }
 
+    @media (min-width: 1600px) {
+        .homepage__content-cover {
+            width: 600px;
+            height: 600px;
+        }
+    }
+
     @keyframes fade {
         from {
             opacity: 0;

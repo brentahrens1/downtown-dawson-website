@@ -32,6 +32,12 @@ export default {
         return {
             isOpen: false
         }
+    },
+    methods: {
+        closeDrawer() {
+            let notOpen = this.isOpen = false
+            window.onclick = notOpen
+        },
     }
 }
 </script>
