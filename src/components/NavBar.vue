@@ -3,15 +3,15 @@
         <div class="nav-header">
             <router-link to="/"><h2>Downtown Dawson</h2></router-link>
         </div>
-        <div class="hamburger" :class="{'open': isOpen}" @click="isOpen = !isOpen">
+        <div class="hamburger" :class="{'open': isOpen}" @click="doClose">
             <div class="hamburger__bar"></div>
             <div class="hamburger__bar"></div>
             <div class="hamburger__bar"></div>
         </div>
         <div class="side-drawer" :class="{'show': isOpen}">
             <ul class="side-drawer-list">
-                <li class="side-drawer-list__item"><router-link to="/catalog">Catalog</router-link></li>
-                <li class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
+                <li @click="doClose" id="side-nav" class="side-drawer-list__item"><router-link to="/catalog">Catalog</router-link></li>
+                <li @click="doClose" id="side-nav" class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
             </ul>
             <div class="socials">
                 <div class="socials-icon">
@@ -34,9 +34,8 @@ export default {
         }
     },
     methods: {
-        closeDrawer() {
-            let notOpen = this.isOpen = false
-            window.onclick = notOpen
+        doClose() {
+            this.isOpen = !this.isOpen
         },
     }
 }

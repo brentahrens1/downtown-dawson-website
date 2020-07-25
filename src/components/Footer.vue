@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
     .footer {
         width: 100%;
-        height: 7rem;
+        height: 9rem;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -55,6 +55,20 @@ export default {
 
             img {
                 width: 100%;
+            }
+        }
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .footer {
+            height: 12rem;
+
+            h2 {
+                text-align: center;
             }
         }
     }
