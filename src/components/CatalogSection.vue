@@ -1,6 +1,5 @@
 <template>
     <div class="music">
-        <h1>Catalog</h1>
         <div class="music__grid">
             <div class="music__block">
                 <div class="music__block-image">
@@ -62,18 +61,13 @@ export default {
         padding: 1rem;
         margin-top: 6rem;
         animation: fade 700ms ease-in-out;
-
-        h1 {
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-        }
     }
 
     .music__grid {
         width: 100%;
         height: 100%;
-        padding:.5rem;
+        padding: .5rem;
+        padding-top: 2rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(auto, auto);
