@@ -34,6 +34,7 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     text-transform: uppercase;
+    animation: fade 700ms ease-in-out;
   }
 
   .contact__right {
@@ -96,6 +97,15 @@ export default {
       h5, a {
         display: none;
       }
+    }
+  }
+
+  @keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
   }
 </style>
