@@ -3,15 +3,15 @@
         <div class="nav-header">
             <router-link to="/"><h2>Downtown Dawson</h2></router-link>
         </div>
-        <div class="hamburger" :class="{'open': isOpen}" @click="doClose">
+        <div class="hamburger" :class="{'open': isOpen}">
             <div class="hamburger__bar"></div>
             <div class="hamburger__bar"></div>
             <div class="hamburger__bar"></div>
         </div>
         <div class="side-drawer" :class="{'show': isOpen}">
             <ul class="side-drawer-list">
-                <li @click="doClose" id="side-nav" class="side-drawer-list__item"><router-link to="/catalog">Catalog</router-link></li>
-                <li @click="doClose" id="side-nav" class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
+                <li @click="doClose" class="side-drawer-list__item"><router-link to="/catalog">Catalog</router-link></li>
+                <li @click="doClose" class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
             </ul>
             <div class="socials">
                 <div class="socials-icon">
@@ -30,13 +30,22 @@ export default {
     name: "NavBar",
     data() {
         return {
-            isOpen: false
+            isOpen: false        
         }
     },
     methods: {
         doClose() {
             this.isOpen = !this.isOpen
         },
+    },
+    mounted: function() {
+        window.onclick = (e) => {
+            if (e.target.className !== "hamburger__bar" && e.target.className !== "hamburger") {
+                this.isOpen = false
+            } else {
+                this.isOpen = !this.isOpen
+            }
+        }
     }
 }
 </script>

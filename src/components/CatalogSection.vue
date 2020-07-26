@@ -111,7 +111,7 @@ export default {
                 display: block;
                 padding: .3rem;
                 z-index: 999;
-                transition: all 700ms ease-in-out;
+                transition: all 400ms ease-in-out;
 
                 &:hover {
                     color: #fff;
