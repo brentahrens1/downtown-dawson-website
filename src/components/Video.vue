@@ -7,7 +7,7 @@
             </video>
             <div class="booking-info">
                 <h1>Booking</h1>
-                <a href="#"><h2>briandawson@gmail.com</h2></a>
+                <h2>downtowndawson@gmail.com</h2>
             </div>
         </div>
         </div>
@@ -52,7 +52,7 @@ export default {
                 margin: 0;
             }
 
-            a:link, a:visited {
+            h2 {
                 font-size: 2rem;
                 margin: 0;
                 color: #fff;

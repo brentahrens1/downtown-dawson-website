@@ -2,11 +2,11 @@
   <div class="homepage">
     <div class="homepage__content">
         <div class="homepage__content-cover">
-            <img src="../assets/images/covers/cyclops.jpg">
+            <a href="http://hyperurl.co/hht8js/" target="_blank"><img src="../assets/images/covers/cyclops.jpg"></a>
         </div>
         <div class="homepage__content-info">
             <h1>Cyclops EP</h1>
-            <button>Listen Now</button>
+            <a href="http://hyperurl.co/hht8js/" target="_blank"><button>Listen Now</button></a>
         </div>
     </div>
   </div>

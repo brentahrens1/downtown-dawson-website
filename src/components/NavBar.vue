@@ -10,6 +10,7 @@
         </div>
         <div class="side-drawer" :class="{'show': isOpen}">
             <ul class="side-drawer-list">
+                <li @click="doClose" class="side-drawer-list__item"><router-link to="/">Home</router-link></li>
                 <li @click="doClose" class="side-drawer-list__item"><router-link to="/catalog">Catalog</router-link></li>
                 <li @click="doClose" class="side-drawer-list__item"><router-link to="/contact">Contact</router-link></li>
             </ul>
@@ -61,6 +62,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         z-index: 1000;
+        background: #fff;
         animation: fade .8s ease-in;
     }
 

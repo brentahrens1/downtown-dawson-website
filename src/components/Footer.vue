@@ -1,14 +1,14 @@
 <template>
     <div class="footer">
         <div class="footer__contact">
-            <h2>Booking: <a href="#">briandawson@gmail.com</a></h2>
+            <h2>Booking: <a href="mailto:downtowndawson@gmail.com">downtowndawson@gmail.com</a></h2>
         </div>
         <div class="footer__socials">
             <div class="footer__socials-icon">
                 <a href="https://www.instagram.com/downtown_dawson/" target="_blank"><img src="../assets/images/instagram-512.png"></a>
             </div>
             <div class="footer__socials-icon">
-                <a href="https://www.instagram.com/downtown_dawson/" target="_blank"><img src="../assets/images/twitter-512.png"></a>
+                <a href="https://www.twitter.com/lastnamedawson" target="_blank"><img src="../assets/images/twitter-512.png"></a>
             </div>
             <div class="footer__socials-icon">
                 <a href="https://soundcloud.com/lastnamedawson" target="_blank"><img src="../assets/images/soundcloud-512.png"></a>

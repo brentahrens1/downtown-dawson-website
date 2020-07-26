@@ -69,5 +69,6 @@ export default {
   a:link, a:visited {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
   }
 </style>
