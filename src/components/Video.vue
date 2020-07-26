@@ -88,15 +88,15 @@ export default {
         @media (max-width: 600px) {
 
         .hero {
-        .booking-info {
-            h1 {
-                font-size: 3.8rem;
-            }
+            .booking-info {
+                h1 {
+                    font-size: 3.5rem;
+                }
 
-            a:link, a:visited {
-                font-size: .9rem;
+                h2 {
+                    font-size: 1rem; 
+                }
             }
-        }
         }
     }
 </style>

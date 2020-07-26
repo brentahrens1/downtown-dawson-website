@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="footer__contact">
-            <h2>Booking: <a href="mailto:downtowndawson@gmail.com">downtowndawson@gmail.com</a></h2>
+            <h3>Booking Inquiries: <a href="mailto:downtowndawson@gmail.com">downtowndawson@gmail.com</a></h3>
         </div>
         <div class="footer__socials">
             <div class="footer__socials-icon">
@@ -41,10 +41,11 @@ export default {
 
         a:link, a:visited {
             color: #fff;
+            font-size: 1.4rem;
         }
 
         &__socials {
-            width: 16rem;
+            width: 18rem;
             display: flex;
             justify-content: space-between;
         }
@@ -58,16 +59,16 @@ export default {
             }
         }
 
-        h2 {
+        h3 {
             margin: 0;
         }
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 800px) {
         .footer {
             height: 12rem;
 
-            h2 {
+            h3 {
                 text-align: center;
             }
         }

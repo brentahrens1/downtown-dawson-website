@@ -33,6 +33,7 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-transform: uppercase;
   }
 
   .contact__right {
@@ -53,7 +54,7 @@ export default {
 
   .contact__left {
 
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 
     .contact__list-item {
       position: relative;
@@ -88,9 +89,13 @@ export default {
     }
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 700px) {
     .contact__right {
       width: 90vw;
+
+      h5, a {
+        display: none;
+      }
     }
   }
 </style>
