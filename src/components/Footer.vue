@@ -5,16 +5,16 @@
         </div>
         <div class="footer__socials">
             <div class="footer__socials-icon">
-                <img src="../assets/images/instagram-512.png">
+                <a href="https://www.instagram.com/downtown_dawson/" target="_blank"><img src="../assets/images/instagram-512.png"></a>
             </div>
             <div class="footer__socials-icon">
-                <img src="../assets/images/twitter-512.png">
+                <a href="https://www.instagram.com/downtown_dawson/" target="_blank"><img src="../assets/images/twitter-512.png"></a>
             </div>
             <div class="footer__socials-icon">
-                <img src="../assets/images/soundcloud-512.png">
+                <a href="https://soundcloud.com/lastnamedawson" target="_blank"><img src="../assets/images/soundcloud-512.png"></a>
             </div>
             <div class="footer__socials-icon">
-                <img src="../assets/images/spotify-512.png">
+                <a href="https://open.spotify.com/artist/6nLgTQYfpeseVLbZ9raSW3?si=Z_kfUFJpRXyrya233uFjjw" target="_blank"><img src="../assets/images/spotify-512.png"></a>
             </div>
         </div>
     </div>

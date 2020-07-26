@@ -15,10 +15,10 @@
             </ul>
             <div class="socials">
                 <div class="socials-icon">
-                    <img src="../assets/images/instagram-512.png">
+                    <a href="https://www.instagram.com/downtown_dawson/" target="_blank"><img src="../assets/images/instagram-512.png"></a>
                 </div>
                 <div class="socials-icon">
-                    <img src="../assets/images/twitter-512.png">
+                    <a href="https://twitter.com/lastnamedawson" target="_blank"><img src="../assets/images/twitter-512.png"></a>
                 </div>
             </div>
         </div>
