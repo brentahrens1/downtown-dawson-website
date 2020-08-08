@@ -120,17 +120,18 @@ export default {
         }
     }
     .side-drawer {
-    height: 100%;
-    width: 25rem;
-    position: fixed;
-    background: orange;
-    top: 0;
-    right:-40rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: right .75s ease-in-out;
+        height: 100%;
+        width: 25.5%;
+        min-width: 300px;
+        position: fixed;
+        background: #FD95A7;
+        top: 0;
+        right:-40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right .75s ease-in-out;
     
         .side-drawer-list {
 

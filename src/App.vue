@@ -50,12 +50,12 @@ export default {
     margin-top: auto;
   }
 
-  p, li, a {
-    font-family: 'Prompt', sans-serif;
+  p, li, a, button {
+    font-family: 'Ramabhadra', sans-serif;
   }
 
   h1, h2, h3, h4, h5 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Ramabhadra', sans-serif;
   }
 
   ul {

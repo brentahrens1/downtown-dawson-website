@@ -31,13 +31,13 @@ export default {
 
     .homepage__content {
         margin-top: 8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
         animation: fade .8s ease-in;
     }
 
     .homepage__content-cover {
-        width: 400px;
-        height: 400px;
+        width: 450px;
+        height: 450px;
 
         img {
             width: 100%;
@@ -48,15 +48,16 @@ export default {
         text-align: center;
 
         h1 {
-            font-size: 4rem;
-            margin: 0;
-            text-transform: uppercase;
+            font-size: 3.8rem;
+            margin: 1rem;
+            margin-top: 1rem;
             font-weight: 900;
             margin-top: .5rem;
             color: #000;
         }
 
         button {
+            font-family: 'Ramabhadra', sans-serif;
             width: 15rem;
             padding: .5rem;
             background: transparent;
@@ -65,7 +66,6 @@ export default {
             font-weight: 700;;
             text-transform: uppercase;
             cursor: pointer;
-            margin-top: .5rem;
             transition: all .3s ease-in-out;
         }
         button:hover {
@@ -86,6 +86,9 @@ export default {
 
         .homepage__content-info button {
             width: 15rem;
+        }
+        .homepage__content {
+            margin-bottom: 8rem;
         }
     }
 

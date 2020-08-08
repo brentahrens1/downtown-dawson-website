@@ -138,6 +138,10 @@ export default {
     @media (max-width: 750px) {
         .music__grid {
             grid-template-columns: repeat(2, 1fr);
+
+            h3 {
+                font-size: .7rem;
+            }
         }
     }
 
